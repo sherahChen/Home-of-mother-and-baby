@@ -1,0 +1,76 @@
+//头部
+#header{
+	background-color:#F1F0F2;
+	// 头部最顶
+	.h_top{
+		font-size:14px;
+		height:42px;
+		border-bottom:1px solid #D7D6D7;
+		.container{
+			border-bottom:1px solid #F7F5F7;
+		}
+		ul:nth-child(1){
+			float:left;
+			margin-top:5px;
+			li{
+			float:left;
+			span{
+				font-weight:bold;
+				color:#666666;				
+				display:block;
+				padding:10px 20px;
+				border-right:1px solid #E7E7E7;
+				
+			}
+		}
+			.active{
+				border:1px solid #CCCCCC;	
+				border-bottom:none;	
+				border-radius:2px;		
+				background-color:#FFFFFF;
+				color:#FF5C00;
+			}
+		}
+		
+		ul:nth-child(2){
+			float:right;
+			li{
+				float:left;
+				span{
+					padding:0px 5px;
+					border-right:1px solid #ccc;
+					line-height: 40px					
+				}
+				a{
+					color:#FF5C00;
+				}				
+			}
+			li:first-child{
+				span{
+					border-right:none;
+				}
+			}
+			li:last-child{
+				span{
+					border-right:none;
+				}
+			}
+
+		}
+
+	}
+	// logo部分
+	.logo{
+		h1{
+			float:left;
+			text-indent:-1000px;
+			margin:30px 0px;
+			background:url('../img/logo.png');
+			width:150px;
+			height:55px;
+		}
+		ul,li{
+			// float:left;
+		}
+	}
+}
