@@ -1,0 +1,12 @@
+ .carousel{position:relative;margin:0 auto;overflow: hidden;}
+        .carousel ul{position:absolute;top:0;left:0;} 
+        .carousel ul li.fadeStyle{
+            position:absolute;top:0;left:0;width:1090px;height:350px;overflow:hidden;
+        }
+        .carousel img{display: block;}
+        .carousel .next,.carousel .prev{position:absolute;left:0;top:50%;transform: translate(0,-50%);padding:10px 5px;width:30px;height:50px;line-height:50px;background-color: rgba(0,0,0,.3);text-align:center;color:#fff;}
+        .carousel .next{left:auto;right:0;}
+         .page{position: absolute;left:45%;bottom:10px;
+            margin-top:-10px;margin-left:0px;;background-color:#969799;opacity:0.8;border-radius:7px;padding:0 5px;height: 20px;}
+        .page span{display:inline-block;margin:0 3px;width:14px;height:14px;background-color:#fff;color:#fff;border-radius:50%;margin-top:3px;text-align:center;}
+        .page span.active{background-color:#f60;color:#f60;}

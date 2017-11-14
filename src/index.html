@@ -1,75 +1,996 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>母婴之家</title>
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-</head>
-<body>
-    <header id="header">
-        <div class="h_top">
-         <div class="container clearfix">
-            <ul>
-                <li ><span class="active">母婴之家</span></li>
-                <li><span>母婴海淘</span></li>
-                <li><span><i></i>手机版</span></li>
-            </ul>
-
-            <ul>
-                <li><span>欢迎来到母婴之家！</span></li>
-                <li><a href=""><span>[登录][免费注册]</span></a></li>
-                <li><span>我的订单<i></i></span></li>
-                <li><span>客户服务<i></i></span></li>
-                <li><span>商务合作</span></li>
-                <li><span>分类导航</span></li>
-            </ul>
-         </div>
-        </div>
-        <div class="logo">
+    <head>
+        <meta charset="UTF-8" />
+        <title>母婴之家</title>
+        <link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link rel="stylesheet" type="text/css" href="lib/jquery-csmCarousel/jquery-carousel.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+    <body>
+        <header id="myheader">         
+        </header>
+        <nav id="nav">
             <div class="container clearfix">
-                <h1>母婴之家</h1>
-                <ul class="clearfix">
-                    <li><img src="" alt="" /><p></p></li>
-                    <li><img src="" alt="" /><p></p></li>
-                    <li><img src="" alt="" /><p></p></li>
-                </ul>
-                <div class="search"></div>
+                <div class="slider">
+                   <h4>全部商品分类<i class="iconfont icon-shangxiajiantou"></i></h4>
+                   <ul class="list">
+                       <li>
+                           <p class="l_p" ><i class="iconfont icon-mama"></i>妈妈专区<i class="iconfont icon-zuoyoujiantou"></i></p>
+                           <div class="goods clearfix">
+                                <ul class="g_l">
+                                   <li>
+                                       <p>奶瓶</p>
+                                       <span>玻璃奶瓶</span>
+                                       <span>PES奶瓶</span>
+                                       <span>PPSU奶瓶</span>
+                                       <span>PP奶瓶</span>
+                                       <span>硅胶奶瓶</span>
+                                       <span>离乳奶瓶/果汁瓶</span>
+                                       <span>奶瓶配件</span>
+                                   </li>
+                                   <li>
+                                       <p>奶嘴</p>
+                                       <span>大流量奶嘴</span>
+                                       <span>中流量奶嘴</span>
+                                       <span>小流量奶嘴</span>
+                                       <span>可调速/果汁奶嘴</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>餐具</p>
+                                       <span>碗/餐盘</span>
+                                       <span>咬咬乐</span>
+                                       <span>餐具组</span>
+                                       <span>筷子</span>
+                                       <span>叉勺/餐刀</span>
+                                       <span>辅食制作</span>
+                                       <span>食物储存</span>
+                                       <span>保温餐具</span>
+                                       <span>围兜</span>
+                                       <span>餐垫/吸盘</span>
+                                   </li>
+                                   <li>
+                                       <p>水杯/水壶</p>
+                                       <span>饮水杯</span>
+                                       <span奶嘴杯></span>
+                                       <span>保温杯/壶</span>
+                                       <span>吸管杯</span>
+                                       <span>鸭嘴杯</span>
+                                       <span>配件</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>辅助用品</p>
+                                       <span>保温袋/餐袋</span>
+                                       <span>奶粉罐/盒</span>
+                                       <span>奶瓶刷/奶嘴刷</span>
+                                       <span>奶瓶夹</span>
+                                       <span>食物剪刀</span>
+                                       <span>奶瓶干燥架</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>哺喂电器</p>
+                                       <span>BB煲/电粥锅</span>
+                                       <span>调奶器</span>
+                                       <span>消毒锅</span>
+                                       <span>暖奶器</span>
+                                       <span>蒸蛋/煮蛋器</span>
+                                       <span>食物料理机/搅拌机</span>
+                    
+                                   </li>
+                                   <li>
+                                       <p>安抚奶嘴/牙胶</p>
+                                       <span>硅胶牙胶</span>
+                                       <span>固齿器/乳胶牙胶</span>
+                                       <span>硅胶安抚奶嘴</span>
+                                       <span>乳胶安抚奶嘴</span>
+                                       <span>注水牙胶</span>
+                                       <span>奶嘴链</span>
+                                       
+                                   </li>
+                                </ul>
+                                <div class="g_r">
+                                    <ul class="g_brands">
+                                        <li><img src="img/1.jpg" alt="" /></li>
+                                        <li><img src="img/2.jpg" alt="" /></li>
+                                        <li><img src="img/3.jpg" alt="" /></li>
+                                        <li><img src="img/4.jpg" alt="" /></li>
+                                        <li><img src="img/5.jpg" alt="" /></li>
+                                        <li><img src="img/6.jpg" alt="" /></li>
+                                        <li><img src="img/7.jpg" alt="" /></li>
+                                        <li><img src="img/8.jpg" alt="" /></li>
+                                    </ul>
+                                    <img class="g_brands_bot" src="img/nav1.jpg" height="180" width="210" alt="" />
+                                </div>
+                           </div>
+                          
+                       </li>
+                       <li>
+                           <p class="l_p"><i class="iconfont icon-naizui-"></i>哺乳喂养<i class="iconfont icon-zuoyoujiantou"></i></p>
+                            <div class="goods clearfix">
+                                <ul class="g_l">
+                                   <li>
+                                       <p>奶瓶</p>
+                                       <span>玻璃奶瓶</span>
+                                       <span>PES奶瓶</span>
+                                       <span>PPSU奶瓶</span>
+                                       <span>PP奶瓶</span>
+                                       <span>硅胶奶瓶</span>
+                                       <span>离乳奶瓶/果汁瓶</span>
+                                       <span>奶瓶配件</span>
+                                   </li>
+                                   <li>
+                                       <p>奶嘴</p>
+                                       <span>大流量奶嘴</span>
+                                       <span>中流量奶嘴</span>
+                                       <span>小流量奶嘴</span>
+                                       <span>可调速/果汁奶嘴</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>餐具</p>
+                                       <span>碗/餐盘</span>
+                                       <span>咬咬乐</span>
+                                       <span>餐具组</span>
+                                       <span>筷子</span>
+                                       <span>叉勺/餐刀</span>
+                                       <span>辅食制作</span>
+                                       <span>食物储存</span>
+                                       <span>保温餐具</span>
+                                       <span>围兜</span>
+                                       <span>餐垫/吸盘</span>
+                                   </li>
+                                   <li>
+                                       <p>水杯/水壶</p>
+                                       <span>饮水杯</span>
+                                       <span奶嘴杯></span>
+                                       <span>保温杯/壶</span>
+                                       <span>吸管杯</span>
+                                       <span>鸭嘴杯</span>
+                                       <span>配件</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>辅助用品</p>
+                                       <span>保温袋/餐袋</span>
+                                       <span>奶粉罐/盒</span>
+                                       <span>奶瓶刷/奶嘴刷</span>
+                                       <span>奶瓶夹</span>
+                                       <span>食物剪刀</span>
+                                       <span>奶瓶干燥架</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>哺喂电器</p>
+                                       <span>BB煲/电粥锅</span>
+                                       <span>调奶器</span>
+                                       <span>消毒锅</span>
+                                       <span>暖奶器</span>
+                                       <span>蒸蛋/煮蛋器</span>
+                                       <span>食物料理机/搅拌机</span>
+                    
+                                   </li>
+                                   <li>
+                                       <p>安抚奶嘴/牙胶</p>
+                                       <span>硅胶牙胶</span>
+                                       <span>固齿器/乳胶牙胶</span>
+                                       <span>硅胶安抚奶嘴</span>
+                                       <span>乳胶安抚奶嘴</span>
+                                       <span>注水牙胶</span>
+                                       <span>奶嘴链</span>
+                                       
+                                   </li>
+                                </ul>
+                                <div class="g_r">
+                                    <ul class="g_brands">
+                                        <li><img src="img/1.jpg" alt="" /></li>
+                                        <li><img src="img/2.jpg" alt="" /></li>
+                                        <li><img src="img/3.jpg" alt="" /></li>
+                                        <li><img src="img/4.jpg" alt="" /></li>
+                                        <li><img src="img/5.jpg" alt="" /></li>
+                                        <li><img src="img/6.jpg" alt="" /></li>
+                                        <li><img src="img/7.jpg" alt="" /></li>
+                                        <li><img src="img/8.jpg" alt="" /></li>
+                                    </ul>
+                                    <img class="g_brands_bot" src="img/nav1.jpg" height="180" width="210" alt="" />
+                                </div>
+                           </div>
+                       </li>
+                       <li> 
+                           <p class="l_p"><i class="iconfont icon-putongnaiping"></i>奶粉辅食<i class="iconfont icon-zuoyoujiantou"></i></p>
+                            <div class="goods clearfix">
+                                <ul class="g_l">
+                                   <li>
+                                       <p>奶瓶</p>
+                                       <span>玻璃奶瓶</span>
+                                       <span>PES奶瓶</span>
+                                       <span>PPSU奶瓶</span>
+                                       <span>PP奶瓶</span>
+                                       <span>硅胶奶瓶</span>
+                                       <span>离乳奶瓶/果汁瓶</span>
+                                       <span>奶瓶配件</span>
+                                   </li>
+                                   <li>
+                                       <p>奶嘴</p>
+                                       <span>大流量奶嘴</span>
+                                       <span>中流量奶嘴</span>
+                                       <span>小流量奶嘴</span>
+                                       <span>可调速/果汁奶嘴</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>餐具</p>
+                                       <span>碗/餐盘</span>
+                                       <span>咬咬乐</span>
+                                       <span>餐具组</span>
+                                       <span>筷子</span>
+                                       <span>叉勺/餐刀</span>
+                                       <span>辅食制作</span>
+                                       <span>食物储存</span>
+                                       <span>保温餐具</span>
+                                       <span>围兜</span>
+                                       <span>餐垫/吸盘</span>
+                                   </li>
+                                   <li>
+                                       <p>水杯/水壶</p>
+                                       <span>饮水杯</span>
+                                       <span奶嘴杯></span>
+                                       <span>保温杯/壶</span>
+                                       <span>吸管杯</span>
+                                       <span>鸭嘴杯</span>
+                                       <span>配件</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>辅助用品</p>
+                                       <span>保温袋/餐袋</span>
+                                       <span>奶粉罐/盒</span>
+                                       <span>奶瓶刷/奶嘴刷</span>
+                                       <span>奶瓶夹</span>
+                                       <span>食物剪刀</span>
+                                       <span>奶瓶干燥架</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>哺喂电器</p>
+                                       <span>BB煲/电粥锅</span>
+                                       <span>调奶器</span>
+                                       <span>消毒锅</span>
+                                       <span>暖奶器</span>
+                                       <span>蒸蛋/煮蛋器</span>
+                                       <span>食物料理机/搅拌机</span>
+                    
+                                   </li>
+                                   <li>
+                                       <p>安抚奶嘴/牙胶</p>
+                                       <span>硅胶牙胶</span>
+                                       <span>固齿器/乳胶牙胶</span>
+                                       <span>硅胶安抚奶嘴</span>
+                                       <span>乳胶安抚奶嘴</span>
+                                       <span>注水牙胶</span>
+                                       <span>奶嘴链</span>
+                                       
+                                   </li>
+                                </ul>
+                                <div class="g_r">
+                                    <ul class="g_brands">
+                                        <li><img src="img/1.jpg" alt="" /></li>
+                                        <li><img src="img/2.jpg" alt="" /></li>
+                                        <li><img src="img/3.jpg" alt="" /></li>
+                                        <li><img src="img/4.jpg" alt="" /></li>
+                                        <li><img src="img/5.jpg" alt="" /></li>
+                                        <li><img src="img/6.jpg" alt="" /></li>
+                                        <li><img src="img/7.jpg" alt="" /></li>
+                                        <li><img src="img/8.jpg" alt="" /></li>
+                                    </ul>
+                                    <img class="g_brands_bot" src="img/nav1.jpg" height="180" width="210" alt="" />
+                                </div>
+                           </div>
+                       </li>
+                       <li>
+                           <p class="l_p"><i class="iconfont icon-zhiniaoku"></i>纸尿裤湿巾<i class="iconfont icon-zuoyoujiantou"></i></p>
+                            <div class="goods clearfix">
+                                <ul class="g_l">
+                                   <li>
+                                       <p>奶瓶</p>
+                                       <span>玻璃奶瓶</span>
+                                       <span>PES奶瓶</span>
+                                       <span>PPSU奶瓶</span>
+                                       <span>PP奶瓶</span>
+                                       <span>硅胶奶瓶</span>
+                                       <span>离乳奶瓶/果汁瓶</span>
+                                       <span>奶瓶配件</span>
+                                   </li>
+                                   <li>
+                                       <p>奶嘴</p>
+                                       <span>大流量奶嘴</span>
+                                       <span>中流量奶嘴</span>
+                                       <span>小流量奶嘴</span>
+                                       <span>可调速/果汁奶嘴</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>餐具</p>
+                                       <span>碗/餐盘</span>
+                                       <span>咬咬乐</span>
+                                       <span>餐具组</span>
+                                       <span>筷子</span>
+                                       <span>叉勺/餐刀</span>
+                                       <span>辅食制作</span>
+                                       <span>食物储存</span>
+                                       <span>保温餐具</span>
+                                       <span>围兜</span>
+                                       <span>餐垫/吸盘</span>
+                                   </li>
+                                   <li>
+                                       <p>水杯/水壶</p>
+                                       <span>饮水杯</span>
+                                       <span奶嘴杯></span>
+                                       <span>保温杯/壶</span>
+                                       <span>吸管杯</span>
+                                       <span>鸭嘴杯</span>
+                                       <span>配件</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>辅助用品</p>
+                                       <span>保温袋/餐袋</span>
+                                       <span>奶粉罐/盒</span>
+                                       <span>奶瓶刷/奶嘴刷</span>
+                                       <span>奶瓶夹</span>
+                                       <span>食物剪刀</span>
+                                       <span>奶瓶干燥架</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>哺喂电器</p>
+                                       <span>BB煲/电粥锅</span>
+                                       <span>调奶器</span>
+                                       <span>消毒锅</span>
+                                       <span>暖奶器</span>
+                                       <span>蒸蛋/煮蛋器</span>
+                                       <span>食物料理机/搅拌机</span>
+                    
+                                   </li>
+                                   <li>
+                                       <p>安抚奶嘴/牙胶</p>
+                                       <span>硅胶牙胶</span>
+                                       <span>固齿器/乳胶牙胶</span>
+                                       <span>硅胶安抚奶嘴</span>
+                                       <span>乳胶安抚奶嘴</span>
+                                       <span>注水牙胶</span>
+                                       <span>奶嘴链</span>
+                                       
+                                   </li>
+                                </ul>
+                                <div class="g_r">
+                                    <ul class="g_brands">
+                                        <li><img src="img/1.jpg" alt="" /></li>
+                                        <li><img src="img/2.jpg" alt="" /></li>
+                                        <li><img src="img/3.jpg" alt="" /></li>
+                                        <li><img src="img/4.jpg" alt="" /></li>
+                                        <li><img src="img/5.jpg" alt="" /></li>
+                                        <li><img src="img/6.jpg" alt="" /></li>
+                                        <li><img src="img/7.jpg" alt="" /></li>
+                                        <li><img src="img/8.jpg" alt="" /></li>
+                                    </ul>
+                                    <img class="g_brands_bot" src="img/nav1.jpg" height="180" width="210" alt="" />
+                                </div>
+                           </div>
+                       </li>
+                       <li>
+                           <p class="l_p"><i class="iconfont icon-yazi"></i>洗护用品<i class="iconfont icon-zuoyoujiantou"></i></p>
+                            <div class="goods clearfix">
+                                <ul class="g_l">
+                                   <li>
+                                       <p>奶瓶</p>
+                                       <span>玻璃奶瓶</span>
+                                       <span>PES奶瓶</span>
+                                       <span>PPSU奶瓶</span>
+                                       <span>PP奶瓶</span>
+                                       <span>硅胶奶瓶</span>
+                                       <span>离乳奶瓶/果汁瓶</span>
+                                       <span>奶瓶配件</span>
+                                   </li>
+                                   <li>
+                                       <p>奶嘴</p>
+                                       <span>大流量奶嘴</span>
+                                       <span>中流量奶嘴</span>
+                                       <span>小流量奶嘴</span>
+                                       <span>可调速/果汁奶嘴</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>餐具</p>
+                                       <span>碗/餐盘</span>
+                                       <span>咬咬乐</span>
+                                       <span>餐具组</span>
+                                       <span>筷子</span>
+                                       <span>叉勺/餐刀</span>
+                                       <span>辅食制作</span>
+                                       <span>食物储存</span>
+                                       <span>保温餐具</span>
+                                       <span>围兜</span>
+                                       <span>餐垫/吸盘</span>
+                                   </li>
+                                   <li>
+                                       <p>水杯/水壶</p>
+                                       <span>饮水杯</span>
+                                       <span奶嘴杯></span>
+                                       <span>保温杯/壶</span>
+                                       <span>吸管杯</span>
+                                       <span>鸭嘴杯</span>
+                                       <span>配件</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>辅助用品</p>
+                                       <span>保温袋/餐袋</span>
+                                       <span>奶粉罐/盒</span>
+                                       <span>奶瓶刷/奶嘴刷</span>
+                                       <span>奶瓶夹</span>
+                                       <span>食物剪刀</span>
+                                       <span>奶瓶干燥架</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>哺喂电器</p>
+                                       <span>BB煲/电粥锅</span>
+                                       <span>调奶器</span>
+                                       <span>消毒锅</span>
+                                       <span>暖奶器</span>
+                                       <span>蒸蛋/煮蛋器</span>
+                                       <span>食物料理机/搅拌机</span>
+                    
+                                   </li>
+                                   <li>
+                                       <p>安抚奶嘴/牙胶</p>
+                                       <span>硅胶牙胶</span>
+                                       <span>固齿器/乳胶牙胶</span>
+                                       <span>硅胶安抚奶嘴</span>
+                                       <span>乳胶安抚奶嘴</span>
+                                       <span>注水牙胶</span>
+                                       <span>奶嘴链</span>
+                                       
+                                   </li>
+                                </ul>
+                                <div class="g_r">
+                                    <ul class="g_brands">
+                                        <li><img src="img/1.jpg" alt="" /></li>
+                                        <li><img src="img/2.jpg" alt="" /></li>
+                                        <li><img src="img/3.jpg" alt="" /></li>
+                                        <li><img src="img/4.jpg" alt="" /></li>
+                                        <li><img src="img/5.jpg" alt="" /></li>
+                                        <li><img src="img/6.jpg" alt="" /></li>
+                                        <li><img src="img/7.jpg" alt="" /></li>
+                                        <li><img src="img/8.jpg" alt="" /></li>
+                                    </ul>
+                                    <img class="g_brands_bot" src="img/nav1.jpg" height="180" width="210" alt="" />
+                                </div>
+                           </div>
+                       </li>
+                       <li>
+                           <p class="l_p"><i class="iconfont icon-fushi"></i>宝宝服饰<i class="iconfont icon-zuoyoujiantou"></i></p>
+                            <div class="goods clearfix">
+                                <ul class="g_l">
+                                   <li>
+                                       <p>奶瓶</p>
+                                       <span>玻璃奶瓶</span>
+                                       <span>PES奶瓶</span>
+                                       <span>PPSU奶瓶</span>
+                                       <span>PP奶瓶</span>
+                                       <span>硅胶奶瓶</span>
+                                       <span>离乳奶瓶/果汁瓶</span>
+                                       <span>奶瓶配件</span>
+                                   </li>
+                                   <li>
+                                       <p>奶嘴</p>
+                                       <span>大流量奶嘴</span>
+                                       <span>中流量奶嘴</span>
+                                       <span>小流量奶嘴</span>
+                                       <span>可调速/果汁奶嘴</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>餐具</p>
+                                       <span>碗/餐盘</span>
+                                       <span>咬咬乐</span>
+                                       <span>餐具组</span>
+                                       <span>筷子</span>
+                                       <span>叉勺/餐刀</span>
+                                       <span>辅食制作</span>
+                                       <span>食物储存</span>
+                                       <span>保温餐具</span>
+                                       <span>围兜</span>
+                                       <span>餐垫/吸盘</span>
+                                   </li>
+                                   <li>
+                                       <p>水杯/水壶</p>
+                                       <span>饮水杯</span>
+                                       <span奶嘴杯></span>
+                                       <span>保温杯/壶</span>
+                                       <span>吸管杯</span>
+                                       <span>鸭嘴杯</span>
+                                       <span>配件</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>辅助用品</p>
+                                       <span>保温袋/餐袋</span>
+                                       <span>奶粉罐/盒</span>
+                                       <span>奶瓶刷/奶嘴刷</span>
+                                       <span>奶瓶夹</span>
+                                       <span>食物剪刀</span>
+                                       <span>奶瓶干燥架</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>哺喂电器</p>
+                                       <span>BB煲/电粥锅</span>
+                                       <span>调奶器</span>
+                                       <span>消毒锅</span>
+                                       <span>暖奶器</span>
+                                       <span>蒸蛋/煮蛋器</span>
+                                       <span>食物料理机/搅拌机</span>
+                    
+                                   </li>
+                                   <li>
+                                       <p>安抚奶嘴/牙胶</p>
+                                       <span>硅胶牙胶</span>
+                                       <span>固齿器/乳胶牙胶</span>
+                                       <span>硅胶安抚奶嘴</span>
+                                       <span>乳胶安抚奶嘴</span>
+                                       <span>注水牙胶</span>
+                                       <span>奶嘴链</span>
+                                       
+                                   </li>
+                                </ul>
+                                <div class="g_r">
+                                    <ul class="g_brands">
+                                        <li><img src="img/1.jpg" alt="" /></li>
+                                        <li><img src="img/2.jpg" alt="" /></li>
+                                        <li><img src="img/3.jpg" alt="" /></li>
+                                        <li><img src="img/4.jpg" alt="" /></li>
+                                        <li><img src="img/5.jpg" alt="" /></li>
+                                        <li><img src="img/6.jpg" alt="" /></li>
+                                        <li><img src="img/7.jpg" alt="" /></li>
+                                        <li><img src="img/8.jpg" alt="" /></li>
+                                    </ul>
+                                    <img class="g_brands_bot" src="img/nav1.jpg" height="180" width="210" alt="" />
+                                </div>
+                           </div>
+                       </li>
+                       <li>
+                           <p class="l_p"><i class="iconfont icon-tongchetongchuang"></i>童车座椅<i class="iconfont icon-zuoyoujiantou"></i></p>
+                            <div class="goods clearfix">
+                                <ul class="g_l">
+                                   <li>
+                                       <p>奶瓶</p>
+                                       <span>玻璃奶瓶</span>
+                                       <span>PES奶瓶</span>
+                                       <span>PPSU奶瓶</span>
+                                       <span>PP奶瓶</span>
+                                       <span>硅胶奶瓶</span>
+                                       <span>离乳奶瓶/果汁瓶</span>
+                                       <span>奶瓶配件</span>
+                                   </li>
+                                   <li>
+                                       <p>奶嘴</p>
+                                       <span>大流量奶嘴</span>
+                                       <span>中流量奶嘴</span>
+                                       <span>小流量奶嘴</span>
+                                       <span>可调速/果汁奶嘴</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>餐具</p>
+                                       <span>碗/餐盘</span>
+                                       <span>咬咬乐</span>
+                                       <span>餐具组</span>
+                                       <span>筷子</span>
+                                       <span>叉勺/餐刀</span>
+                                       <span>辅食制作</span>
+                                       <span>食物储存</span>
+                                       <span>保温餐具</span>
+                                       <span>围兜</span>
+                                       <span>餐垫/吸盘</span>
+                                   </li>
+                                   <li>
+                                       <p>水杯/水壶</p>
+                                       <span>饮水杯</span>
+                                       <span奶嘴杯></span>
+                                       <span>保温杯/壶</span>
+                                       <span>吸管杯</span>
+                                       <span>鸭嘴杯</span>
+                                       <span>配件</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>辅助用品</p>
+                                       <span>保温袋/餐袋</span>
+                                       <span>奶粉罐/盒</span>
+                                       <span>奶瓶刷/奶嘴刷</span>
+                                       <span>奶瓶夹</span>
+                                       <span>食物剪刀</span>
+                                       <span>奶瓶干燥架</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>哺喂电器</p>
+                                       <span>BB煲/电粥锅</span>
+                                       <span>调奶器</span>
+                                       <span>消毒锅</span>
+                                       <span>暖奶器</span>
+                                       <span>蒸蛋/煮蛋器</span>
+                                       <span>食物料理机/搅拌机</span>
+                    
+                                   </li>
+                                   <li>
+                                       <p>安抚奶嘴/牙胶</p>
+                                       <span>硅胶牙胶</span>
+                                       <span>固齿器/乳胶牙胶</span>
+                                       <span>硅胶安抚奶嘴</span>
+                                       <span>乳胶安抚奶嘴</span>
+                                       <span>注水牙胶</span>
+                                       <span>奶嘴链</span>
+                                       
+                                   </li>
+                                </ul>
+                                <div class="g_r">
+                                    <ul class="g_brands">
+                                        <li><img src="img/1.jpg" alt="" /></li>
+                                        <li><img src="img/2.jpg" alt="" /></li>
+                                        <li><img src="img/3.jpg" alt="" /></li>
+                                        <li><img src="img/4.jpg" alt="" /></li>
+                                        <li><img src="img/5.jpg" alt="" /></li>
+                                        <li><img src="img/6.jpg" alt="" /></li>
+                                        <li><img src="img/7.jpg" alt="" /></li>
+                                        <li><img src="img/8.jpg" alt="" /></li>
+                                    </ul>
+                                    <img class="g_brands_bot" src="img/nav1.jpg" height="180" width="210" alt="" />
+                                </div>
+                           </div>
+                       </li>
+                       <li>
+                           <p class="l_p"><i class="iconfont icon-wanju"></i>玩具<i class="iconfont icon-zuoyoujiantou"></i></p>
+                            <div class="goods clearfix">
+                                <ul class="g_l">
+                                   <li>
+                                       <p>奶瓶</p>
+                                       <span>玻璃奶瓶</span>
+                                       <span>PES奶瓶</span>
+                                       <span>PPSU奶瓶</span>
+                                       <span>PP奶瓶</span>
+                                       <span>硅胶奶瓶</span>
+                                       <span>离乳奶瓶/果汁瓶</span>
+                                       <span>奶瓶配件</span>
+                                   </li>
+                                   <li>
+                                       <p>奶嘴</p>
+                                       <span>大流量奶嘴</span>
+                                       <span>中流量奶嘴</span>
+                                       <span>小流量奶嘴</span>
+                                       <span>可调速/果汁奶嘴</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>餐具</p>
+                                       <span>碗/餐盘</span>
+                                       <span>咬咬乐</span>
+                                       <span>餐具组</span>
+                                       <span>筷子</span>
+                                       <span>叉勺/餐刀</span>
+                                       <span>辅食制作</span>
+                                       <span>食物储存</span>
+                                       <span>保温餐具</span>
+                                       <span>围兜</span>
+                                       <span>餐垫/吸盘</span>
+                                   </li>
+                                   <li>
+                                       <p>水杯/水壶</p>
+                                       <span>饮水杯</span>
+                                       <span奶嘴杯></span>
+                                       <span>保温杯/壶</span>
+                                       <span>吸管杯</span>
+                                       <span>鸭嘴杯</span>
+                                       <span>配件</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>辅助用品</p>
+                                       <span>保温袋/餐袋</span>
+                                       <span>奶粉罐/盒</span>
+                                       <span>奶瓶刷/奶嘴刷</span>
+                                       <span>奶瓶夹</span>
+                                       <span>食物剪刀</span>
+                                       <span>奶瓶干燥架</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>哺喂电器</p>
+                                       <span>BB煲/电粥锅</span>
+                                       <span>调奶器</span>
+                                       <span>消毒锅</span>
+                                       <span>暖奶器</span>
+                                       <span>蒸蛋/煮蛋器</span>
+                                       <span>食物料理机/搅拌机</span>
+                    
+                                   </li>
+                                   <li>
+                                       <p>安抚奶嘴/牙胶</p>
+                                       <span>硅胶牙胶</span>
+                                       <span>固齿器/乳胶牙胶</span>
+                                       <span>硅胶安抚奶嘴</span>
+                                       <span>乳胶安抚奶嘴</span>
+                                       <span>注水牙胶</span>
+                                       <span>奶嘴链</span>
+                                       
+                                   </li>
+                                </ul>
+                                <div class="g_r">
+                                    <ul class="g_brands">
+                                        <li><img src="img/1.jpg" alt="" /></li>
+                                        <li><img src="img/2.jpg" alt="" /></li>
+                                        <li><img src="img/3.jpg" alt="" /></li>
+                                        <li><img src="img/4.jpg" alt="" /></li>
+                                        <li><img src="img/5.jpg" alt="" /></li>
+                                        <li><img src="img/6.jpg" alt="" /></li>
+                                        <li><img src="img/7.jpg" alt="" /></li>
+                                        <li><img src="img/8.jpg" alt="" /></li>
+                                    </ul>
+                                    <img class="g_brands_bot" src="img/nav1.jpg" height="180" width="210" alt="" />
+                                </div>
+                           </div>
+                       </li>
+                       <li>
+                           <p class="l_p"><i class="iconfont icon-chuang"></i>座椅寝具<i class="iconfont icon-zuoyoujiantou"></i></p>
+                            <div class="goods clearfix">
+                                <ul class="g_l">
+                                   <li>
+                                       <p>奶瓶</p>
+                                       <span>玻璃奶瓶</span>
+                                       <span>PES奶瓶</span>
+                                       <span>PPSU奶瓶</span>
+                                       <span>PP奶瓶</span>
+                                       <span>硅胶奶瓶</span>
+                                       <span>离乳奶瓶/果汁瓶</span>
+                                       <span>奶瓶配件</span>
+                                   </li>
+                                   <li>
+                                       <p>奶嘴</p>
+                                       <span>大流量奶嘴</span>
+                                       <span>中流量奶嘴</span>
+                                       <span>小流量奶嘴</span>
+                                       <span>可调速/果汁奶嘴</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>餐具</p>
+                                       <span>碗/餐盘</span>
+                                       <span>咬咬乐</span>
+                                       <span>餐具组</span>
+                                       <span>筷子</span>
+                                       <span>叉勺/餐刀</span>
+                                       <span>辅食制作</span>
+                                       <span>食物储存</span>
+                                       <span>保温餐具</span>
+                                       <span>围兜</span>
+                                       <span>餐垫/吸盘</span>
+                                   </li>
+                                   <li>
+                                       <p>水杯/水壶</p>
+                                       <span>饮水杯</span>
+                                       <span奶嘴杯></span>
+                                       <span>保温杯/壶</span>
+                                       <span>吸管杯</span>
+                                       <span>鸭嘴杯</span>
+                                       <span>配件</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>辅助用品</p>
+                                       <span>保温袋/餐袋</span>
+                                       <span>奶粉罐/盒</span>
+                                       <span>奶瓶刷/奶嘴刷</span>
+                                       <span>奶瓶夹</span>
+                                       <span>食物剪刀</span>
+                                       <span>奶瓶干燥架</span>
+                                       
+                                   </li>
+                                   <li>
+                                       <p>哺喂电器</p>
+                                       <span>BB煲/电粥锅</span>
+                                       <span>调奶器</span>
+                                       <span>消毒锅</span>
+                                       <span>暖奶器</span>
+                                       <span>蒸蛋/煮蛋器</span>
+                                       <span>食物料理机/搅拌机</span>
+                    
+                                   </li>
+                                   <li>
+                                       <p>安抚奶嘴/牙胶</p>
+                                       <span>硅胶牙胶</span>
+                                       <span>固齿器/乳胶牙胶</span>
+                                       <span>硅胶安抚奶嘴</span>
+                                       <span>乳胶安抚奶嘴</span>
+                                       <span>注水牙胶</span>
+                                       <span>奶嘴链</span>
+                                       
+                                   </li>
+                                </ul>
+                                <div class="g_r">
+                                    <ul class="g_brands">
+                                        <li><img src="img/1.jpg" alt="" /></li>
+                                        <li><img src="img/2.jpg" alt="" /></li>
+                                        <li><img src="img/3.jpg" alt="" /></li>
+                                        <li><img src="img/4.jpg" alt="" /></li>
+                                        <li><img src="img/5.jpg" alt="" /></li>
+                                        <li><img src="img/6.jpg" alt="" /></li>
+                                        <li><img src="img/7.jpg" alt="" /></li>
+                                        <li><img src="img/8.jpg" alt="" /></li>
+                                    </ul>
+                                    <img class="g_brands_bot" src="img/nav1.jpg" height="180" width="210" alt="" />
+                                </div>
+                           </div>
+                       </li>
+                   </ul>     
+               
+                </div>
+               <!-- 导航栏右边 -->
+                <ul class="n_r">
+                    <li class="active">首页</li>
+                    <li>幸运星期一</li>
+                    <li><span>直邮专区</span><p>欧洲直邮</p></li>
+                    <li>品牌专区</li>
+                    <li>会员俱乐部</li>
+                </ul> 
+            </div>
+            <div class="nav-line"></div>
+        </nav>
+        <div id="banner">
+            <div class="container box">
+                
             </div>
         </div>
-    
-        
-        
-    </header>
-    <nav id="nav">
-        <h4>全部商品分类</h4>
-        <ul>
-            <li>首页</li>
-            <li>幸运星期一</li>
-            <li>直邮专区</li>
-            <li>品牌专区</li>
-            <li>会员俱乐部</li>
-        </ul>
-    </nav>
-    <div class="gd"></div>
-    <div id="banner"></div>
-    <main id="main">
-        <ul class="m_top">
-            <li></li>
-            <li></li>
-            <li></li> 
-        </ul>
-        <!-- 特惠专场 -->
-        <div class="special"></div>
-        <!-- 精选 -->
-        <div class="select"></div>
-        <!-- 品牌专场 -->
-        <div class="brands"></div>
-    </main>
-    <footer id="footer">
-        <div class="f_top"></div>
-        <div class="f_center "></div>
-        <div class="f_bottom"></div>       
-    </footer>
-</body>
+        <main id="main">
+            <div class="container">
+                <ul class="m_top">
+                <li><img src="img/m1.jpg" height="150" width="350" alt="" /></li>
+                <li><img src="img/m2.jpg" height="150" width="350" alt="" /></li>
+                <li><img src="img/m3.jpg" height="150" width="350" alt="" /></li>
+            </ul>
+            <!-- 特惠专场 -->
+            <div class="special">
+                <div class="topPic">
+                    <span></span>
+                    <div class="title"><p>特惠<span>专场</span></p>
+                    <span>Special deals</span></div>
+                    <span></span>
+                </div>
+                <ul class="content clearfix">
+                  <!--   <li>
+                        <div class="left"><a href=""><img src="img/i_m1.jpg" alt="" /></a></div>
+                        <div class="right">
+                            <p class="name">          智能生活新体验三星空气净化器                     
+                            </p>
+                            <div class="details">
+                                <span>携手拯救雾霾星球</span>
+                            </div>
+                       
+                                <p class="site"><i class="iconfont"></i>母婴之家发货</p>
+                            
+                            <div class="last">
+                                <p class="price"><span>￥</span>69.00<span>起</span></p>
+                                <div class="enter">点击进入</div>
+                            </div>
+                        </div>
+                        
+                    </li> -->
+                </ul>
+            </div>
+            <!-- 今日精选 -->
+            <div class="select">
+                <div class="topPic">
+                    <span></span>
+                    <div class="title"><p>今日<span>精选</span></p>
+                    <span>Select today</span></div>
+                    <span></span>
+                </div>
+                <ul class="content clearfix">
+                </ul>
+                    
+            </div>
+            <!-- 品牌专栏 -->
+            <div class="brands">
+                <div class="topPic">
+                    <span></span>
+                    <div class="title"><p>品牌<span>专栏</span></p>
+                    <span>Brand cloumn</span></div>
+                    <span></span>
+                </div>
+                <div class="b_bot clearfix">
+                    <div class="b_left">
+                        <img src="img/i_mb1.jpg" alt="" /><img src="img/i_mb2.jpg" height="160" width="370" alt="" />
+                        
+                    </div>
+                     <ul class="b_right">
+                        <li><img src="img/1.jpg"  alt="" /></li>
+                         <li><img src="img/2.jpg" alt="" /></li>
+                         <li><img src="img/3.jpg" alt="" /></li>
+                         <li><img src="img/4.jpg" alt="" /></li>
+                         <li><img src="img/5.jpg" alt="" /></li>
+                         <li><img src="img/6.jpg" alt="" /></li>
+                         <li><img src="img/7.jpg" alt="" /></li>
+                         <li><img src="img/8.jpg" alt="" /></li>
+                         <li><img src="img/9.jpg" alt="" /></li>
+                         <li><img src="img/10.jpg" alt="" /></li>
+                         <li><img src="img/11.jpg" alt="" /></li>
+                         <li><img src="img/12.jpg" alt="" /></li>
+                         <li><img src="img/13.jpg" alt="" /></li>
+                         <li><img src="img/14.jpg" alt="" /></li>
+                         <li><img src="img/15.jpg" alt="" /></li>
+                         <li><img src="img/16.jpg" alt="" /></li> 
+                     </ul>
+                </div>
+                
+            </div>
+            </div>
+            
+        </main>
+        <footer id="myfooter">       
+        </footer>
+        <div id="aside">  
+              <div>
+              <i class="iconfont icon-wo"></i>              
+              </div>
+              
+              <div class="shopping"><i class="iconfont icon-gouwuche"></i><p class="car">购物车<span>(<span class="qty">0</span>)</span></p>
+              <!-- 购物车 -->
+                  <div class="shoppingCar">
+                      <p>购物车</p>
+                      <ul class="car_goods">
+                        
+                      </ul>
+                      <div class="car_bot">
+                        <p>共计  ￥<span class="total"></span></p>
+                        <button><a href="">去购物车预算</a></button>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div>
+                <ul>
+                  <li><i class="iconfont icon-juxing67kaobei"></i></li>
+                  <li><i class="iconfont icon-shoucang"></i></li>
+                  <li><i class="iconfont icon-kefu"></i><p>在线客服</p></li>
+                </ul>
+              </div>
+              <div><i class="iconfont icon-huidaodingbu toTop"></i></li>
+            </div>       
+        </div>
+        <div id="fixed-top">
+          <div class="container">
+            <img src="img/fixLogo.png" height="25" width="105" alt="" />
+             <ul class="clone_nav">
+                    <li class="active">首页</li>
+                    <li>幸运星期一</li>
+                    <li><span>直邮专区</span><p>欧洲直邮</p></li>
+                    <li>品牌专区</li>
+                    <li>会员俱乐部</li>
+                </ul> 
+                <div class="s_top clearfix">
+                      <button><i class="iconfont icon-sousuo"></i></button> 
+                           <input type="text" placeholder="搜索 母婴之家 商品/品牌"/>
+                         
+                </div>
+          </div>
+            
+        </div>
+    </body>
+    <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="lib/jquery-csmCarousel/jquery-csmCarousel.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
 </html>

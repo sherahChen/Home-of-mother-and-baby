@@ -1,0 +1,281 @@
+#logo_pit {
+  height: 86px;
+  padding-top: 20px;
+}
+
+#logo_pit a img {
+  display: block;
+}
+
+#myFooter .f_bottom {
+  background-color: #fff;
+}
+
+#main {
+  height: 610px;
+  background-color: #ECECEC;
+  padding-top: 20px;
+}
+
+#main .content {
+  position: relative;
+  height: 570px;
+  background-color: #fff;
+  width: 1000px;
+  margin: 0px auto;
+}
+
+#main .content .active, #main .content .theme > ul li:nth-child(1) {
+  z-index: 99;
+  border-top: 3px solid #f90;
+  border-bottom: #fff;
+}
+
+#main .content .theme {
+  background-color: #ECECEC;
+  height: 38px;
+}
+
+#main .content .theme > ul {
+  margin: 0 auto;
+  width: 504px;
+  height: 38px;
+  display: flex;
+}
+
+#main .content .theme > ul li {
+  border-bottom: none;
+  border: 1px solid #dedede;
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  flex: 1;
+  float: left;
+  margin-left: 10px;
+  line-height: 38px;
+  font-size: 14px;
+}
+
+#main .content .theme > ul li i {
+  width: 20px;
+  height: 20px;
+  float: left;
+  position: absolute;
+  left: 80px;
+  top: 10px;
+  background: url("../img/register.png") -190px -8px no-repeat;
+}
+
+#main .content .theme > ul li span {
+  font-weight: bold;
+}
+
+#main .content .theme > ul li:nth-child(1) span {
+  color: #FF5A00;
+}
+
+#main .content .theme > ul li:nth-child(2) i {
+  background: url("../img/register.png") -228px -8px no-repeat;
+}
+
+#main .content .info {
+  z-index: 20;
+  border: 1px solid #dedede;
+  position: absolute;
+  top: 37px;
+  left: 0px;
+}
+
+#main .content .reg_info, #main .content .log_info {
+  height: 532px;
+  display: flex;
+}
+
+#main .content .reg_info .info_l, #main .content .log_info .info_l {
+  padding-top: 40px;
+  width: 498px;
+}
+
+#main .content .reg_info .info_l p:nth-child(-n+3), #main .content .log_info .info_l p:nth-child(-n+3) {
+  margin-bottom: 27px;
+}
+
+#main .content .reg_info .info_l p:nth-child(-n+3) input, #main .content .log_info .info_l p:nth-child(-n+3) input {
+  float: left;
+  height: 34px;
+  width: 274px;
+  padding-left: 5px;
+}
+
+#main .content .reg_info .info_l p:nth-child(-n+3) label, #main .content .log_info .info_l p:nth-child(-n+3) label {
+  line-height: 36px;
+  float: left;
+}
+
+#main .content .reg_info .info_l input, #main .content .log_info .info_l input {
+  border: 1px solid #C1C1C1;
+}
+
+#main .content .reg_info .info_l label, #main .content .log_info .info_l label {
+  line-height: 36px;
+  float: left;
+  height: 36px;
+  width: 165px;
+  text-align: right;
+}
+
+#main .content .reg_info .info_l .check, #main .content .log_info .info_l .check {
+  margin-bottom: 20px;
+}
+
+#main .content .reg_info .info_l .check label, #main .content .log_info .info_l .check label {
+  float: left;
+  line-height: 46px;
+}
+
+#main .content .reg_info .info_l .check > div, #main .content .log_info .info_l .check > div {
+  float: left;
+  height: 42px;
+  width: 279px;
+  border: 1px solid #C1C1C1;
+}
+
+#main .content .reg_info .info_l .check > div img, #main .content .log_info .info_l .check > div img {
+  border-radius: 50%;
+  float: left;
+  margin: 5px;
+  display: block;
+  width: 35px;
+  height: 33px;
+  background: url("../img/all.png") -270px -50px no-repeat;
+}
+
+#main .content .reg_info .info_l .check > div p, #main .content .log_info .info_l .check > div p {
+  margin: 0;
+  padding: 0;
+  float: left;
+  text-align: left;
+  width: 188px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 14px;
+}
+
+#main .content .reg_info .info_l .code, #main .content .log_info .info_l .code {
+  height: 62px;
+  display: block;
+  width: 100%;
+}
+
+#main .content .reg_info .info_l .code label, #main .content .log_info .info_l .code label {
+  margin-top: 5px;
+}
+
+#main .content .reg_info .info_l .code > div, #main .content .log_info .info_l .code > div {
+  height: 36px;
+  margin-bottom: 25px;
+}
+
+#main .content .reg_info .info_l .code > div input, #main .content .log_info .info_l .code > div input {
+  float: left;
+  width: 126px;
+  height: 34px;
+}
+
+#main .content .reg_info .info_l .code > div > div, #main .content .log_info .info_l .code > div > div {
+  float: left;
+  margin-left: 10px;
+  width: 112px;
+  height: 30px;
+  background: url("../img/register.png") 0 0 no-repeat;
+}
+
+#main .content .reg_info .info_l .ckbox, #main .content .log_info .info_l .ckbox {
+  height: 12px;
+  padding: 12px 0px;
+  text-align: center;
+  padding-left: 34px;
+}
+
+#main .content .reg_info .info_l .btn, #main .content .log_info .info_l .btn {
+  margin: 0 auto;
+}
+
+#main .content .reg_info .info_l .btn button, #main .content .log_info .info_l .btn button {
+  margin-left: 164px;
+  width: 228px;
+  height: 40px;
+  background: url("../img/register.png") 0px -30px no-repeat;
+}
+
+#main .content .reg_info .info_l p:nth-last-child(2), #main .content .log_info .info_l p:nth-last-child(2) {
+  margin-top: 20px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+#main .content .reg_info .info_l > ul, #main .content .log_info .info_l > ul {
+  padding-left: 166px;
+}
+
+#main .content .reg_info .info_l > ul li, #main .content .log_info .info_l > ul li {
+  float: left;
+  margin-right: 10px;
+}
+
+#main .content .reg_info .info_l > ul li img, #main .content .log_info .info_l > ul li img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+#main .content .reg_info .info_l > ul li:nth-child(1) img, #main .content .log_info .info_l > ul li:nth-child(1) img {
+  background: url("../img/register.png") 0px -300px no-repeat;
+}
+
+#main .content .reg_info .info_l > ul li:nth-child(2) img, #main .content .log_info .info_l > ul li:nth-child(2) img {
+  background: url("../img/register.png") -27px -300px no-repeat;
+}
+
+#main .content .reg_info .info_l > ul li:nth-child(3) img, #main .content .log_info .info_l > ul li:nth-child(3) img {
+  background: url("../img/register.png") -57px -300px no-repeat;
+}
+
+#main .content .reg_info .info_r, #main .content .log_info .info_r {
+  width: 502px;
+}
+
+#main .content .reg_info .info_r img, #main .content .log_info .info_r img {
+  display: block;
+  height: 300px;
+  width: 340px;
+  background: url("../img/info1.jpg") no-repeat;
+  margin: 40px auto;
+}
+
+#main .content .log_info .info_r img {
+  background: url("../img/info2.jpg");
+}
+
+#main .content .log_info .info_l {
+  margin-top: 20px;
+}
+
+#main .content .log_info .info_l label {
+  width: 80px;
+}
+
+#main .content .log_info .info_l .ckbox {
+  text-align: left;
+  margin-left: 45px;
+}
+
+#main .content .log_info .info_l .btn button {
+  margin-left: 78px;
+  background: url("../img/register.png") 0px -329px no-repeat;
+}
+
+#main .content .log_info .info_l p:nth-last-child(2) {
+  text-align: left;
+  margin-left: 78px;
+}
