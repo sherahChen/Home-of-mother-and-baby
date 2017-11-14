@@ -25,12 +25,6 @@
   margin: 0px auto;
 }
 
-#main .content .active, #main .content .theme > ul li:nth-child(1) {
-  z-index: 99;
-  border-top: 3px solid #f90;
-  border-bottom: #fff;
-}
-
 #main .content .theme {
   background-color: #ECECEC;
   height: 38px;
@@ -41,6 +35,13 @@
   width: 504px;
   height: 38px;
   display: flex;
+}
+
+#main .content .theme > ul .active {
+  color: #FF5A00;
+  z-index: 99;
+  border-top: 3px solid #f90;
+  border-bottom: #fff;
 }
 
 #main .content .theme > ul li {
@@ -70,15 +71,12 @@
   font-weight: bold;
 }
 
-#main .content .theme > ul li:nth-child(1) span {
-  color: #FF5A00;
-}
-
 #main .content .theme > ul li:nth-child(2) i {
   background: url("../img/register.png") -228px -8px no-repeat;
 }
 
 #main .content .info {
+  width: 1000px;
   z-index: 20;
   border: 1px solid #dedede;
   position: absolute;
@@ -91,12 +89,23 @@
   display: flex;
 }
 
+#main .content .reg_info i, #main .content .log_info i {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
 #main .content .reg_info .info_l, #main .content .log_info .info_l {
+  float: left;
   padding-top: 40px;
   width: 498px;
 }
 
 #main .content .reg_info .info_l p:nth-child(-n+3), #main .content .log_info .info_l p:nth-child(-n+3) {
+  position: relative;
   margin-bottom: 27px;
 }
 
@@ -105,11 +114,35 @@
   height: 34px;
   width: 274px;
   padding-left: 5px;
+  border: 1px solid #C1C1C1;
 }
 
 #main .content .reg_info .info_l p:nth-child(-n+3) label, #main .content .log_info .info_l p:nth-child(-n+3) label {
   line-height: 36px;
   float: left;
+}
+
+#main .content .reg_info .info_l .p1 i, #main .content .log_info .info_l .p1 i {
+  background: url("../img/register.png") -126px -8px;
+}
+
+#main .content .reg_info .info_l .p2 i, #main .content .log_info .info_l .p2 i {
+  background: url("../img/register.png") -159px -8px;
+}
+
+#main .content .reg_info .info_l .p3, #main .content .log_info .info_l .p3 {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+#main .content .reg_info .info_l .p3 input, #main .content .log_info .info_l .p3 input {
+  padding-left: 5px;
+  height: 34px;
+  width: 274px;
+}
+
+#main .content .reg_info .info_l .p3 i, #main .content .log_info .info_l .p3 i {
+  background: url("../img/register.png") -159px -8px;
 }
 
 #main .content .reg_info .info_l input, #main .content .log_info .info_l input {
@@ -122,6 +155,34 @@
   height: 36px;
   width: 165px;
   text-align: right;
+}
+
+#main .content .reg_info .info_l .notice, #main .content .log_info .info_l .notice, #main .content .log_info .info_l .notice_user, #main .content .log_info .info_l .notice_psw {
+  display: none;
+  line-height: 22px;
+  position: absolute;
+  top: 77px;
+  left: 164px;
+  height: 22px;
+  width: 186px;
+  background-color: #ffedb5;
+  color: #e60000;
+  border: 1px solid #ff9900;
+  border-radius: 3px;
+}
+
+#main .content .reg_info .info_l .notice span, #main .content .log_info .info_l .notice span, #main .content .log_info .info_l .notice_user span, #main .content .log_info .info_l .notice_psw span {
+  padding-left: 24px;
+}
+
+#main .content .reg_info .info_l .notice i, #main .content .log_info .info_l .notice i, #main .content .log_info .info_l .notice_user i, #main .content .log_info .info_l .notice_psw i {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/all.png") -350px -50px no-repeat;
 }
 
 #main .content .reg_info .info_l .check, #main .content .log_info .info_l .check {
@@ -159,6 +220,12 @@
   height: 42px;
   line-height: 42px;
   font-size: 14px;
+  position: relative;
+}
+
+#main .content .reg_info .info_l .check > div p i, #main .content .log_info .info_l .check > div p i {
+  right: -34px;
+  background: url("../img/all.png") -320px -50px no-repeat;
 }
 
 #main .content .reg_info .info_l .code, #main .content .log_info .info_l .code {
@@ -242,6 +309,7 @@
 }
 
 #main .content .reg_info .info_r, #main .content .log_info .info_r {
+  float: left;
   width: 502px;
 }
 
@@ -253,11 +321,16 @@
   margin: 40px auto;
 }
 
+#main .content .log_info {
+  display: none;
+}
+
 #main .content .log_info .info_r img {
   background: url("../img/info2.jpg");
 }
 
 #main .content .log_info .info_l {
+  position: relative;
   margin-top: 20px;
 }
 
@@ -265,9 +338,43 @@
   width: 80px;
 }
 
+#main .content .log_info .info_l i {
+  right: 147px;
+  background: url("../img/register.png") -126px -8px;
+}
+
+#main .content .log_info .info_l .notice_user {
+  left: 80px;
+  top: 77px;
+}
+
+#main .content .log_info .info_l .notice_psw {
+  left: 80px;
+  top: 140px;
+}
+
+#main .content .log_info .info_l .ps i {
+  background: url("../img/register.png") -159px -8px;
+}
+
+#main .content .log_info .info_l .check {
+  position: relative;
+}
+
+#main .content .log_info .info_l .check i {
+  top: 14px;
+  background: url("../img/all.png") -320px -50px no-repeat;
+}
+
 #main .content .log_info .info_l .ckbox {
   text-align: left;
   margin-left: 45px;
+}
+
+#main .content .log_info .info_l .ckbox a {
+  margin-left: 5px;
+  color: #81E1FF;
+  font-soie: 12px;
 }
 
 #main .content .log_info .info_l .btn button {
@@ -278,4 +385,8 @@
 #main .content .log_info .info_l p:nth-last-child(2) {
   text-align: left;
   margin-left: 78px;
+}
+
+#main .content .log_info .info_l > ul {
+  padding-left: 78px;
 }

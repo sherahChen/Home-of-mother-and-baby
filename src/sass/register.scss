@@ -18,20 +18,22 @@ $bgcolor:#ECECEC;
     padding-top:20px;
     
     .content{
-        .active{
-                    z-index:99;
-                    border-top:3px solid #f90;
-                    border-bottom:#fff;
-                  }
         position:relative;
         height: 570px;
        background-color:#fff;
        width: 1000px;
        margin:0px auto; 
+       // 登录、注册
        .theme{
         background-color:$bgcolor;
          height: 38px;
             >ul{
+                .active{
+                    color:$color;
+                    z-index:99;
+                    border-top:3px solid #f90;
+                    border-bottom:#fff;
+                  }
                 margin:0 auto;
                 width: 504px;
                 height: 38px;
@@ -62,12 +64,6 @@ $bgcolor:#ECECEC;
                             }
                   }
                   
-                  li:nth-child(1){
-                        @extend .active;
-                        span{
-                              color:$color;
-                        }
-                  }
                   li:nth-child(2) {
                     i{
                     background:url('../img/register.png') -228px -8px no-repeat;
@@ -77,26 +73,40 @@ $bgcolor:#ECECEC;
                 
             }
        } 
+       // 内容
        .info{
+        width: 1000px;
         z-index:20;
         border:1px solid #dedede;
         position:absolute;
         top:37px;
         left:0px;
        }
+       // 注册信息
        .reg_info{
          height: 532px;
          display:flex;
+         i{
+                        position:absolute;
+                        top:10px;
+                        right:60px;
+                        display:block;
+                        width: 20px;
+                        height: 20px;
+                    }
             .info_l{
+                float:left;
                 padding-top:40px;
                 width: 498px;
-                p:nth-child(-n+3){                 
+                p:nth-child(-n+3){  
+                position:relative;               
                     margin-bottom:27px;
                     input{
                         float:left;
                         height: 34px;
                         width:274px;                       
                         padding-left:5px;
+                        border:1px solid #C1C1C1; 
                     }
                     
                     label{
@@ -104,10 +114,34 @@ $bgcolor:#ECECEC;
                         float:left;
 
                     }
+                    
+                }
+                .p1{
+                    i{
+                       background:url('../img/register.png') -126px -8px; 
+
+                    }
+                }
+                .p2 i{
+                    background:url('../img/register.png') -159px -8px; 
+                }
+                .p3 {
+                     position:relative;
+                     margin-bottom:27px;
+                     input{
+                       
+                        padding-left:5px;
+                        height: 34px;
+                        width:274px;  
+                     }
+                     i{
+                        background:url('../img/register.png') -159px -8px; 
+                     }
+                   
                 }
                 input{
-                        border:1px solid #C1C1C1; 
-                    }
+                    border:1px solid #C1C1C1;
+                }
                 label{
                       line-height: 36px;
                        float:left;
@@ -115,6 +149,31 @@ $bgcolor:#ECECEC;
                         width: 165px;
                         text-align:right;
                     }
+                .notice{
+                    display:none;
+                    line-height: 22px;
+                    position:absolute;
+                    top:77px;
+                    left:164px;
+                    height: 22px;
+                    width: 186px;
+                    background-color:#ffedb5;
+                    color:: #e60000;
+                    border:1px solid #ff9900;
+                    border-radius:3px;
+                    span{
+                        padding-left:24px;
+                    }
+                    i{
+                        position:absolute;
+                        top:3px;
+                        left:4px;
+                        display:block;
+                        width: 16px;
+                        height: 16px;
+                        background:url('../img/all.png') -350px -50px no-repeat;
+                    }
+                }
                .check{
                     margin-bottom:20px;
                     label{
@@ -145,6 +204,11 @@ $bgcolor:#ECECEC;
                             height: 42px;
                             line-height: 42px;
                             font-size:14px;
+                            position:relative;
+                            i{
+                                right:-34px;
+                                background:url('../img/all.png') -320px -50px no-repeat;
+                            }
                         }
                     }
                 }
@@ -234,6 +298,7 @@ $bgcolor:#ECECEC;
 
             }
             .info_r{
+                float:left;
                 width: 502px;
                 img{
                     display:block;
@@ -245,32 +310,67 @@ $bgcolor:#ECECEC;
             }
             
        }
+       // 登录信息
        .log_info{
-        @extend .reg_info;
-        .info_r img{
-            background:url('../img/info2.jpg');
-        }
-        .info_l {
-            label{
-                width: 80px;
+            display:none;
+            @extend .reg_info;
+            .info_r img{
+                background:url('../img/info2.jpg');
             }
-            margin-top:20px;
-            .ckbox{
-                text-align:left;
-                margin-left:45px;
-            }
-            .btn button{
-                margin-left:78px;
-                background:url('../img/register.png') 0px -329px no-repeat;
-            }
-            p:nth-last-child(2){
-                text-align:left;
-                margin-left:78px;
-            }
-            >ul{
-                
-            }
-        }
-       }
+            .info_l {
+                position:relative;
+                margin-top:20px;
+                label{
+                    width: 80px;
+                }
+                i{
+                    right:147px;
+                    background:url('../img/register.png') -126px -8px;
+                }
+                .notice_user{
+                    left:80px;
+                    top:77px;
+                    @extend .notice;
+                    
+                }
+                .notice_psw{
+                    left:80px;
+                    top:140px;
+                    @extend .notice;
+                  
+                }
+                .ps i{
+                     background:url('../img/register.png') -159px -8px; 
+                }
+                .check {
+                    position:relative;
+                     i{
+                    top:14px;
+                    background:url('../img/all.png') -320px -50px no-repeat;
+                }
+                }
+                   
+                .ckbox{
+                    text-align:left;
+                    margin-left:45px;
+                    a{
+                        margin-left:5px;
+                        color:#81E1FF;
+                        font-soie:12px;
+                    }
+                }
+                .btn button{
+                    margin-left:78px;
+                    background:url('../img/register.png') 0px -329px no-repeat;
+                }
+                p:nth-last-child(2){
+                    text-align:left;
+                    margin-left:78px;
+                }
+                >ul{
+                    padding-left:78px;
+                }
+              }
+           }
     }
 }
