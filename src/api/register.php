@@ -12,7 +12,7 @@
     // 把读取的内容转为数组
     $all_phone = json_decode($content);
 
-     //将每个phone，并添加到数组
+     //将每个phone添加到数组
     $res=array();
     foreach($all_phone as $idx => $value){
       $res[$idx]=$value->phone;

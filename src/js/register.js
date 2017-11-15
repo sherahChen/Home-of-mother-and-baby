@@ -1,4 +1,5 @@
-(function($){
+require(['config'],function(){
+    require(['jquery'],function(){
     //加载header、footer
     $('#myHeader').load('../html/header.html .h_top');
     $('#myFooter').load('../html/footer.html .f_bottom');
@@ -79,6 +80,6 @@
                 $('.notice_user').css({'display':'none'});
                 $('.notice_psw').css({'display':'none'});
            }
-        });
-        
-})(jQuery);
+        });     
+    });
+});
