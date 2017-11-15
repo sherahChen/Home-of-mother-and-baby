@@ -1,7 +1,10 @@
 require(['config'],function(){
     require(['jquery'],function(){
     //加载header、footer
-    $('#myHeader').load('../html/header.html .h_top');
+    $('#myHeader').load('../html/header.html #header',function(){
+        $('.logo').css({'background-color':'#fff','border-top':'none'}).find('.logo_pit').siblings('div').remove();
+    });
+        
     $('#myFooter').load('../html/footer.html .f_bottom');
 
     //登录、注册切换

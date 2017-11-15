@@ -1,6 +1,7 @@
 // 加载js
 require(['config'],function(){
   require(['jquery','csmCarousel','common'],function(){
+    
   // 数据生成列表
     $specialUl=$('.special').children('ul');
     $selectUl=$('.select').children('ul');

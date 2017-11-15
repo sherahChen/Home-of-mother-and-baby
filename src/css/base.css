@@ -157,7 +157,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 
  .h_top {
   font-size: 14px;
-  height: 43px;
+  height: 42px;
   border-bottom: 1px solid #D7D6D7;
 }
 
@@ -269,9 +269,11 @@ s,i,em{font-style:normal;text-decoration:none;}
   border-top: 1px solid #F7F5F7;
   height: 125px;
 }
-
+.logo_pit{
+    float: left;
+}
 .logo_pit a{
-  float: left;
+  display:block;
   margin: 32px 0px;
 }
 
@@ -361,6 +363,8 @@ s,i,em{font-style:normal;text-decoration:none;}
 
 /*nav*/
 #nav {
+  border-top:1px solid #CCCCCC;
+  border-bottom:1px solid #CCCCCC;
   z-index: 99;
   height: 35px;
   font-size: 14px;
@@ -381,6 +385,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 }
 
 #nav .slider h4 {
+  font-weight:bold;
   width: 100%;
   color: #FF5C00;
 }
@@ -626,7 +631,7 @@ s,i,em{font-style:normal;text-decoration:none;}
   text-align: center;
 }
 
-#nav .n_r li:nth-child(3):hover p {
+#nav .n_r li:nth-child(3) span:hover+p{
   display: block;
 }
 

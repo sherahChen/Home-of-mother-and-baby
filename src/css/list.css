@@ -1,0 +1,248 @@
+.container {
+  width: 1000px;
+}
+
+#nav .container {
+  width: 1090px;
+}
+
+.l_right {
+  float: right;
+  margin-top: 28px;
+}
+
+.l_right .r_content {
+  border: 1px solid #FF5C00;
+  position: relative;
+  height: 42px;
+  width: 154px;
+  background-color: #FF5C00;
+  color: #fff;
+  line-height: 42px;
+  border-radius: 3px;
+}
+
+.l_right .r_content i {
+  font-size: 26px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0 10px;
+}
+
+.l_right .r_content a {
+  float: left;
+  margin-left: 40px;
+  padding: 0 10px;
+  color: #FFF;
+  font-size: 14px;
+}
+
+.l_right .r_content span {
+  font-size: 14px;
+  position: relative;
+  float: right;
+  margin: 1px;
+  height: 40px;
+  width: 36px;
+  background-color: #fff;
+  color: #FF5C00;
+  text-align: center;
+}
+
+.l_right .r_content span::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  border: 8px solid transparent;
+  border-right-color: #fff;
+}
+
+#main {
+  background-color: #ECECEC;
+  padding-top: 15px;
+}
+
+#main .selects {
+  height: 434px;
+}
+
+#main .selects .sl {
+  height: 410px;
+}
+
+#main .selects .sl ul {
+  border: 1px solid #DEDEDE;
+  background-color: #fff;
+}
+
+#main .selects .sl ul li {
+  font-size: 1px;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 0 10px;
+  width: 180px;
+  line-height: 28px;
+}
+
+#main .selects .sl ul :last-child {
+  border-bottom: 0;
+}
+
+#main .selects .sr {
+  border: 1px solid #DEDEDE;
+  background-color: #fff;
+  width: 788px;
+  height: 408px;
+}
+
+#main .selects .sr .sr_nav {
+  box-size: border-box;
+  width: 100%;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+#main .selects .sr .sr_nav ul li {
+  color: #000;
+  float: left;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#main .selects .sr .sr_nav ul li i {
+  padding: 0 10px;
+}
+
+#main .selects .sr .sr_nav ul li:first-child {
+  padding-left: 20px;
+}
+
+#main .selects .sr .sr_list li {
+  max-height: 35px;
+  overflow: hidden;
+  padding: 5px 0;
+  font-size: 14px;
+  border-bottom: 1px dotted #EBEBEB;
+}
+
+#main .selects .sr .sr_list li p {
+  float: left;
+  text-align: right;
+  width: 89px;
+  height: 100%;
+}
+
+#main .selects .sr .sr_list li .each_list {
+  width: 624px;
+  float: left;
+}
+
+#main .selects .sr .sr_list li .each_list span {
+  font-size: 12px;
+  color: #0081CC;
+  padding-right: 20px;
+}
+
+#main .lists {
+  height: 335px;
+  width: 788px;
+  margin-left: 210px;
+}
+
+#main .lists .tab {
+  height: 32px;
+  border-bottom: 2px solid #FF5C00;
+}
+
+#main .lists .tab li {
+  float: left;
+  text-align: center;
+  line-height: 32px;
+}
+
+#main .lists .tab .t_l {
+  background-color: #F4F4F4;
+}
+
+#main .lists .tab .t_l li {
+  border-right: 1px solid #DEDEDE;
+  padding: 0 10px;
+}
+
+#main .lists .tab .t_l li:last-child {
+  border-right: 0;
+}
+
+#main .lists .tab .t_r li {
+  height: 30px;
+  width: 48px;
+  background-color: #F4F4F4;
+  margin-left: 10px;
+  border: 1px solid #DEDEDE;
+}
+
+#main .lists .tab .t_page {
+  line-height: 32px;
+}
+
+#main .lists ul, #main .lists li {
+  list-style: none;
+}
+
+#main .lists .goods {
+  background-color: #fff;
+  border: 1px solid #DEDEDE;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main .lists .goods li {
+  padding: 15px 0px 5px 18px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  flex: 25%;
+}
+
+#main .lists .goods li img {
+  width: 160px;
+  height: 160px;
+}
+
+#main .lists .goods li span {
+  color: #E60000;
+}
+
+#main .lists .goods li .name {
+  line-height: 18px;
+  color: #000;
+  width: 154px;
+  wrap-white: wrap;
+}
+
+#main .lists .goods li .price {
+  color: #E60000;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#main .lists .goods li .btn .add {
+  width: 78px;
+  height: 30px;
+  background-color: #FF5C00;
+  border-radius: 3px;
+}
+
+#main .lists .goods li .btn .add a {
+  display: block;
+  color: #fff;
+}
+
+#main .lists .goods li .btn .like {
+  width: 40px;
+  height: 30px;
+  background-color: #EFEFEF;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px;
+  margin-left: 10px;
+}
