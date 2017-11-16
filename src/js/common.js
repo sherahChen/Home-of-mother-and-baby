@@ -21,19 +21,20 @@
         var $aside=$('#aside');
         var num=0;
         var scrollTop=window.scrollY;
-        $aside.on('click','.car',function(e){console.log(666)
+        $aside.on('click','.car',function(e){
           num++;
           if(num%2!=0){
               $('.shoppingCar').css('display','block');     
           }
           else{
-             $('.shoppingCar').css('display','none');
+            $('.shoppingCar').css('display','none');
           }  
           // 停止事件传播
-           e.stopPropagation(); 
-
-            // 返回顶部  
-         }).on('click','.toTop',function(){    
+           e.stopPropagation();         
+         }).on('click','.close',function(){
+             $('.shoppingCar').css('display','none');
+           // 返回顶部 
+      }).on('click','.toTop',function(){    
              var timer = setInterval(function(){
               var speed = scrollTop/10;
                scrollTop -= speed;
@@ -63,3 +64,5 @@
            $(this).children('i').removeClass('icon-shangjiantou').addClass('icon-shangxiajiantou');
         })   
  }
+
+

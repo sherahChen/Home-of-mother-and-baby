@@ -686,7 +686,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 }
 
 #aside div:nth-child(2) P {
-  height: 93px;
+  /*height: 93px;*/
   margin-bottom: 10px;
   border-bottom: 1px solid #EBEBEB;
   padding: 0 3px;
@@ -706,7 +706,7 @@ s,i,em{font-style:normal;text-decoration:none;}
   margin: 0 7px;
 }
 
-#aside div:nth-child(3) li:nth-child(3) {
+#aside .div3>ul>li:nth-child(3) {
   color: #fff;
   background-color: #FF5C00;
 }
@@ -715,10 +715,10 @@ s,i,em{font-style:normal;text-decoration:none;}
   box-shadow: -7px 1px 10px rgba(31, 31, 31, 0.21);
   color: #444;
   display: none;
-  z-index: 1002;
+  /*z-index: 1002;*/
   width: 282px;
   min-height: 690px;
-  position: fixed;
+  position:absolute;
   top: 0px;
   right: 60px;
   background-color: #fff;
@@ -729,8 +729,46 @@ s,i,em{font-style:normal;text-decoration:none;}
   font-size: 18px;
   padding: 14px 0px;
   height: 18px;
+  position:relative;
+    
 }
+#aside .close{
+     position:absolute;
+     top:8px;
+     right:0px;
+     display:block;
+     padding:10px;
+    }
+#aside .close:hover{
+  background-color:#FF5C00;
+  color:#fff;
+}
+#aside div .shoppingCar .car_goods li{
+  position:relative;
+  border-bottom:1px solid #DEDEDE;
+}
+#aside div .shoppingCar .car_goods li img{
+    width: 50px;;
+    height: 50px;
+    float:left;
+}
+#aside div .shoppingCar .car_goods li p{
+  border-bottom:0;
+  /*float:right;*/
+  width: 224px;
 
+}
+#aside div .shoppingCar .car_goods li .btn-close{
+  position:absolute;
+  top:0px;
+  right:0px;
+  display:block;
+  padding:5px;
+}
+#aside div .shoppingCar .car_goods li .btn-close:hover{
+  background-color:#FF5C00;
+  color:#fff;
+}
 #aside div .shoppingCar .car_bot {
   width: 100%;
   position: absolute;
