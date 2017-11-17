@@ -1,13 +1,15 @@
 <?php
-    // 分页
-    
-    
+    // 分页 
     include 'connect.php';
     // 获取前端传递的参数
     $pageNo = isset($_GET['pageNo']) ? $_GET['pageNo'] :1;
     $qty = isset($_GET['qty']) ? $_GET['qty'] : 20;
-     $sql='select * from goods';
+    $id=isset($_GET['id'])?$_GET['id']:'';
 
+    $sql='select * from goods';
+    if($id){
+        $sql.=" where id='$id'";       
+    }
     // 执行sql
     $result=$conn->query($sql);
      // 使用查询结果集

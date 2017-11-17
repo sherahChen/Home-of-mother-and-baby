@@ -59,6 +59,10 @@
   border-right-color: #fff;
 }
 
+#footer .f_top li {
+  padding-left: 0;
+}
+
 #main {
   background-color: #ECECEC;
   padding-top: 15px;

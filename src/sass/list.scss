@@ -54,6 +54,11 @@ $bdcolor:#DEDEDE;
              }
     }
 }
+#footer{
+    .f_top li{
+        padding-left:0;
+    }
+}
 #main{
     background-color:$bgcolor;;
     padding-top:15px;

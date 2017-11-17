@@ -5,15 +5,13 @@ require(['config'],function(){
              toTop();
              showRight();
              showIconfont();
-             show_goods();
+             show_goods();//显示所有商品
              $('.logo').find('.l_center').remove();
              $('#nav').find('.nav-line').remove();
               $('.logo').css({'position':'relative','background-color':'#fff','border-top':'none'}).find('.search').css({'float':'left','margin-left':'98px'});
               var $l_right=$('.l_right');
               $('.logo .container').append($l_right);
-
-
-              
+            
      //商品飞入购物车效果         
         let allTotal=0;
          var num=0; // 计算商品的数量
@@ -91,6 +89,11 @@ require(['config'],function(){
               }
            } 
         });
+    //点击商品图片，跳转页面并传递该商品id
+     $('.goods').on('click','img',function(){
+          var id=$(this).parent('li').attr('data-id');
+          location.href=`details.html?id=${id}`;
+     });
       }
       });
           
@@ -125,7 +128,7 @@ require(['config'],function(){
         var qty=20;
        var pageNo=1;
        var content='';
-       $.ajax({url:'../api/list_page.php',async:false,data:{qty:qty,pageNo:pageNo},success:showPage});
+       $.ajax({url:'../api/list.php',async:false,data:{qty:qty,pageNo:pageNo},success:showPage});
           
        
           // 页码点击事件
@@ -133,17 +136,20 @@ require(['config'],function(){
               pageNo=$(this).html()*1;
               $('.goods').children('li').remove()
                $('.page').html('');
-            $.ajax({url:'../api/list_page.php',async:false,data:{qty:qty,pageNo:pageNo},success:showPage
+            $.ajax({url:'../api/list.php',async:false,data:{qty:qty,pageNo:pageNo},success:showPage
           });  
           });
 
        function showPage(res){
          $('.goods').children('li').remove();
            // 将字符串转为数组
-           res=$.parseJSON(res);       
+           res=$.parseJSON(res);
+                     
            res.data.map(function(item){
+            // 获取图片数组
+             var array=item.n_imgurl.split(",");
              content+= `<li data-id="${item.id}">
-                        <img src="${item.s_imgurl}" height="160" width="160" alt="" />
+                        <img src="${array[0]}" height="160" width="160" alt="" />
                         <p class="name">${item.name}<span>${item.details}</span></p>
                         <p class="price">￥<span class="jiage">${item.price}</span></p>
                         <div class="btn clearfix"><button class="add fl">加入购物车</button><button class="like fl">收藏</button></div>
