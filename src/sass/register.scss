@@ -95,6 +95,7 @@ $bgcolor:#ECECEC;
                         height: 20px;
                     }
             .info_l{
+                position:relative;
                 float:left;
                 padding-top:40px;
                 width: 498px;
@@ -161,7 +162,7 @@ $bgcolor:#ECECEC;
                     color:: #e60000;
                     border:1px solid #ff9900;
                     border-radius:3px;
-                    span{
+                    >span{
                         padding-left:24px;
                     }
                     i{
@@ -174,6 +175,7 @@ $bgcolor:#ECECEC;
                         background:url('../img/all.png') -350px -50px no-repeat;
                     }
                 }
+
                .check{
                     margin-bottom:20px;
                     label{
@@ -295,7 +297,12 @@ $bgcolor:#ECECEC;
                         
                     }
                 }
-
+                .notice_psw{
+                    position:absolute;
+                    top:140px;
+                    @extend .notice;
+                  
+                }
             }
             .info_r{
                 float:left;

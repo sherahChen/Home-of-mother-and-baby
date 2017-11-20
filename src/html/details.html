@@ -5,13 +5,14 @@
     <title>母婴之家-【详情页】</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/details.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/jquery-csmZoom/jquery-csmZoom.css" />
 </head>
 <body>
     <header id="myHeader"></header>
      <div class="l_right">
         <div class="r_content">
             <i class="iconfont icon-cart"></i>
-            <a href="">购物车</a>
+            <a href="../html/cart.html">购物车</a>
             <span>0</span>
            
         </div>
@@ -26,10 +27,13 @@
                     <li class="name"></li>
                 </ul>
             </div>
-            <div class="m_content">
+            <div class="m_content goods">
                 <div class="c_left">
-
-                    <img class="imgurl" src="" alt="" />
+                    <div class="img">
+                      <img class="imgurl" width="350"src="" alt="" />  
+                      <span></span>
+                    </div>
+                    
                     <div class="carou">
                         <div class="last fl"></div>
                         <ul class="carousel">
@@ -80,9 +84,9 @@
                     </li>
                     <li>
                         <ul class="num">
-                            <li><span class="qty">1</span><p><i></i><i></i></p></li>
+                            <li><input type="text" class="qtys" value="1"/><p><i class="addNum"></i><i class="delNum"></i></p></li>
                             <li>
-                                <button></button>
+                                <button class="add"></button>
                             </li>
                             <li><i class="iconfont icon-shouji"></i>客户端下单</li>
                         </ul>

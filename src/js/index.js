@@ -1,17 +1,19 @@
 // 加载js
-require(['config'],function(){
-  require(['jquery','csmCarousel','common'],function(){
-    
-  // 数据生成列表
-    $specialUl=$('.special').children('ul');
-    $selectUl=$('.select').children('ul');
-    var res=$.ajax({url:'../api/data/index.json',async:false});
-    res=$.parseJSON(res.responseText);
-    var special='';
-        var select=''; 
-    res.map(function(item){ 
-       if(item.type=="special"){
-           special+=`<li>
+require(['config'], function() {
+    require(['jquery', 'csmCarousel', 'common'], function() {
+        // 数据生成列表
+        $specialUl = $('.special').children('ul');
+        $selectUl = $('.select').children('ul');
+        var res = $.ajax({
+            url: '../api/data/index.json',
+            async: false
+        });
+        res = $.parseJSON(res.responseText);
+        var special = '';
+        var select = '';
+        res.map(function(item) {
+            if (item.type == "special") {
+                special += `<li>
                         <div class="left">
                          <a href=""><img src="${item.imgurl}" alt="" /></a>
                         </div>
@@ -27,10 +29,10 @@ require(['config'],function(){
                         </div>
                     </div>
                             
-                    </li>`;  
-       } 
-       if(item.type=="select"){
-           select+=`<li>
+                    </li>`;
+            }
+            if (item.type == "select") {
+                select += `<li>
                         <div class="left">
                          <a href=""><img src="${item.imgurl}" alt="" /></a>
                         </div>
@@ -47,24 +49,28 @@ require(['config'],function(){
                         </div>
                     </div>
                           
-                    </li>`;  
-       }
-       return [special,select]; 
-       // return select;      
-    }); 
-       $specialUl.append(special);
-       $selectUl.append(select);
-
-       //加载header、footer
-       $('#myheader').load("../html/header.html #headerAll",function(){
-        // 吸顶
-         toTop();
-         // 右侧边栏
-         showRight();
-         // 导航栏金字体图标
-         showIconfont();
-       });
-       $('#myfooter').load('../html/footer.html #footer');  
-       
-  });
+                    </li>`;
+            }
+            return [special, select];
+            // return select;      
+        });
+        $specialUl.append(special);
+        $selectUl.append(select);
+        //加载header、footer
+        $('#myheader').load("../html/header.html #headerAll", function() {
+            // 吸顶
+            toTop();
+            // 右侧边栏
+            showRight();
+            // 导航栏金字体图标
+            showIconfont();
+        });
+        $('#myfooter').load('../html/footer.html #footer');
+        $('#banner').children('.box').csmCarousel({
+            imgs: ["img/banner1.jpg", "img/banner2.jpg", "img/banner3.jpg", "img/banner4.jpg", "img/banner5.jpg"],
+            showBtn: false,
+            width: 1090,
+            height: 350
+        });
+    });
 });

@@ -5,6 +5,7 @@ require(['config'],function(){
              toTop();
              showRight();
              showIconfont();
+      
             $('.logo').find('.l_center').remove();
             $('#nav').find('.nav-line').remove();
             $('.logo').css({'position':'relative','background-color':'#fff','border-top':'none'}).find('.search').css({'float':'left','margin-left':'98px'});
@@ -15,8 +16,11 @@ require(['config'],function(){
         $('#myFooter').load('../html/footer.html #footer');  
 
         // 商品信息（tab标签切换）
-        $('.d_right .r_nav').on('click','li',function(){     var $idx=$(this).index();
+        $('.d_right .r_nav').on('click','li',function(){     
+            var $idx=$(this).index();
             $('.cont').eq($idx).css({'display':'block'}).siblings('.cont').css({'display':'none'});
+            $(this).find('span').addClass('hover');
+            $(this).siblings('li').find('span').removeClass('hover');
         });
          
 
@@ -37,6 +41,7 @@ require(['config'],function(){
                 $('.price').html(item.price);
                
                 $('.all_detail').find('img').attr('src',item.d_imgurl);
+
                 // 获取图片数组
                 var small_img=item.s_imgurl.split(",");
                 var big_img=item.b_imgurl.split(",");
@@ -48,13 +53,13 @@ require(['config'],function(){
 
                  } 
                  $('.imgurl').attr('src',normal_img[0]);
-               
+                 $('.imgurl').attr('data-bigpit',big_img[0]);
                  $('.carousel').append(l_pit);
 
                  // 为小图添加两个属性（存放大图和正常图地址）
                  for(var i=0;i<small_img.length;i++){
-                $('.carousel').find('li').children('img').eq(i).attr('data-bigPit',big_img[i]);
-                 $('.carousel').find('li').children('img').eq(i).attr('data-norPit',normal_img[i]);
+                $('.carousel').find('li').children('img').eq(i).attr('data-bigpit',big_img[i]);
+                 $('.carousel').find('li').children('img').eq(i).attr('data-norpit',normal_img[i]);
                  }
                 var $li='';
                 if(item.age){
@@ -83,21 +88,39 @@ require(['config'],function(){
                  }
                  $('.item').append($li);
 
-                });
 
-                //小图点击事件
+                //小图事件
                 $('.carousel').on('mouseenter','img',function(){
                     var idx=$(this).index();
                     // 正常图片地址
-                    var normal=$(this).attr('data-norPit');
+                    var normal=$(this).attr('data-norpit');
                     // 大图地址
-                    var big=$(this).attr('data-bigPit');
+                    var big=$(this).attr('data-bigpit');
                     // 显示正常图片
                     $('.imgurl').attr('src',normal);
-                    $('.imgurl').attr('data-bigPit',big);
+                    $(this).parent('li').css({'border-color':'#FF5C00'}).siblings('li').css({'border-color':'#DEDEDE'});
+                    $('.imgurl').attr('data-bigpit',big);
                 });
-                $('.imgurl').csmZoom();
-                        
+                    $('.img').csmZoom({
+                    width:470,
+                    height:450
+                });
+                                
+                });
+            
+            // 数量加减
+            $('.num').on('click', '.addNum', function() {
+            var num = $('.qtys').val();
+            num++;
+            $('.qtys').val(num);
+             }).on('click', '.delNum', function() {
+            var num = $('.qtys').val();
+            num--;
+            if (num < 1) {
+                num = 1;
+            }
+            $('.qtys').val(num);
+        }); 
             }
          });
     });

@@ -99,6 +99,7 @@
 }
 
 #main .content .reg_info .info_l, #main .content .log_info .info_l {
+  position: relative;
   float: left;
   padding-top: 40px;
   width: 498px;
@@ -157,7 +158,7 @@
   text-align: right;
 }
 
-#main .content .reg_info .info_l .notice, #main .content .log_info .info_l .notice, #main .content .log_info .info_l .notice_user, #main .content .log_info .info_l .notice_psw {
+#main .content .reg_info .info_l .notice, #main .content .log_info .info_l .notice, #main .content .reg_info .info_l .notice_psw, #main .content .log_info .info_l .notice_psw, #main .content .log_info .info_l .notice_user {
   display: none;
   line-height: 22px;
   position: absolute;
@@ -171,11 +172,11 @@
   border-radius: 3px;
 }
 
-#main .content .reg_info .info_l .notice span, #main .content .log_info .info_l .notice span, #main .content .log_info .info_l .notice_user span, #main .content .log_info .info_l .notice_psw span {
+#main .content .reg_info .info_l .notice > span, #main .content .log_info .info_l .notice > span, #main .content .reg_info .info_l .notice_psw > span, #main .content .log_info .info_l .notice_psw > span, #main .content .log_info .info_l .notice_user > span {
   padding-left: 24px;
 }
 
-#main .content .reg_info .info_l .notice i, #main .content .log_info .info_l .notice i, #main .content .log_info .info_l .notice_user i, #main .content .log_info .info_l .notice_psw i {
+#main .content .reg_info .info_l .notice i, #main .content .log_info .info_l .notice i, #main .content .reg_info .info_l .notice_psw i, #main .content .log_info .info_l .notice_psw i, #main .content .log_info .info_l .notice_user i {
   position: absolute;
   top: 3px;
   left: 4px;
@@ -306,6 +307,11 @@
 
 #main .content .reg_info .info_l > ul li:nth-child(3) img, #main .content .log_info .info_l > ul li:nth-child(3) img {
   background: url("../img/register.png") -57px -300px no-repeat;
+}
+
+#main .content .reg_info .info_l .notice_psw, #main .content .log_info .info_l .notice_psw {
+  position: absolute;
+  top: 140px;
 }
 
 #main .content .reg_info .info_r, #main .content .log_info .info_r {

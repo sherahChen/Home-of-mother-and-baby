@@ -2,8 +2,8 @@
     $.fn.csmZoom = function(options){
         var defaults = {
             //大图显示区域宽高
-            width:470,
-            height:450
+            width:200,
+            height:300
         }
         //this:jquery对象（实例）
         this.each(function(){
@@ -18,8 +18,8 @@
 
                 _init:function(){
                     // 小图
-                    this.$smallImg = $small;
-
+                    this.$smallImg = $small.find('.imgurl');
+                    
                     // 生成大图/容器
                     this.$big = $('<div/>').addClass('gds-big');
                     this.$big.css({
@@ -32,24 +32,21 @@
 
                     // 生成放大镜
                     this.$minzoom = $('<span/>').addClass('minzoom');
-
                     $small.on('mouseenter',function(){
-                        this.show();
+                        this.show();              
                     }.bind(this)).on('mouseleave',function(){
                         this.hide();
                     }.bind(this)).on('mousemove',function(e){
-                        this.move(e.clientX,e.clientY);
+                        this.move(e.pageX,e.pageY);
                     }.bind(this));
                 },
                 show:function(){
                     // 写入图片地址
-                    this.$bigImg.attr('src',this.$smallImg.attr('data-bigPit'));
+                    this.$bigImg.attr('src',this.$smallImg.attr('data-bigpit'));
                     this.$big.append(this.$bigImg);
-                    this.$big.appendTo('body');
+                    this.$big.appendTo('.c_mid');
+                    $('.c_mid').css({'position':'relative'});
                     this.$minzoom.appendTo($small);
-
-                    console.log(this.$bigImg[0].complete)
-
                     // 要获取图片的高度，必须先显示到页面
                     // 并且图片加载完成才可以获取图片实际高度
                     this.$bigImg[0].onload = function(){
@@ -71,9 +68,8 @@
                 },
                 move:function(x,y){
                     // 计算放大镜移动过的距离
-                    var left = x - $small.offset().left -  this.$minzoom.outerWidth()/2;
-                    var top = y - $small.offset().top -  this.$minzoom.outerHeight()/2;
-
+                    var left = x - $small.offset().left-  this.$minzoom.outerWidth()/2;
+                    var top = y -$small.offset().top-this.$minzoom.outerHeight()/2;
                     // 限定left,top值
                     if(left<0){
                         left = 0;

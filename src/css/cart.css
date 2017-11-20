@@ -1,0 +1,437 @@
+.container {
+  width: 1000px;
+}
+
+body {
+  background-color: #ECECEC;
+}
+
+#logo {
+  height: 145px;
+}
+
+#logo .l_left {
+  height: 145px;
+}
+
+#logo .l_left > img:nth-child(1) {
+  margin-top: 20px;
+  display: block;
+  width: 155px;
+  height: 55px;
+  background: url("../img/logo.png") no-repeat;
+}
+
+#logo .l_left > h2 {
+  margin-top: 12px;
+  display: block;
+  width: 115px;
+  height: 36px;
+  font-size: 20px;
+  line-height: 36px;
+  padding-left: 40px;
+  font-weight: bold;
+  background: url("../img/cart.png") no-repeat;
+}
+
+#logo .l_right .step {
+  margin-top: 34px;
+  width: 609px;
+  height: 35px;
+  background: url("../img/cart-step1.png") no-repeat;
+  border-radius: 14px;
+}
+
+#logo .l_right > p {
+  margin-top: 40px;
+  text-align: right;
+}
+
+#logo .l_right > p > span {
+  color: #FF5C00;
+}
+
+#main .cart {
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  margin-bottom: 20px;
+}
+
+#main .cart ul:nth-child(1) {
+  display: flex;
+}
+
+#main .cart .name {
+  width: 478px;
+  margin-left: 28px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#main .cart .name span {
+  font-size: 12px;
+  color: #777777;
+  font-weight: normal;
+}
+
+#main .cart .price {
+  width: 127px;
+}
+
+#main .cart .num {
+  width: 124px;
+}
+
+#main .cart .l_price {
+  width: 110px;
+}
+
+#main .cart .delect {
+  width: 131px;
+}
+
+#main .cart .c_nav {
+  height: 44px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+#main .cart .c_nav > li {
+  line-height: 44px;
+  text-align: center;
+  text-align: left;
+}
+
+#main .cart .cart_goods > li {
+  width: 100%;
+  height: 105px;
+  line-height: 105px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+#main .cart .cart_goods > li ul {
+  width: 100%;
+}
+
+#main .cart .cart_goods > li .name {
+  width: 478px;
+}
+
+#main .cart .cart_goods > li .name > img {
+  float: left;
+  border: 1px solid #E5E5E5;
+  display: block;
+  width: 73px;
+  height: 73px;
+  margin: 17px 12px;
+}
+
+#main .cart .cart_goods > li .price {
+  line-height: 20px;
+}
+
+#main .cart .cart_goods > li .price > div {
+  margin-top: 32px;
+  height: 73px;
+  width: 100%;
+}
+
+#main .cart .cart_goods > li .price > div > span {
+  height: 14px;
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+#main .cart .cart_goods > li .num {
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#main .cart .cart_goods > li .num p {
+  margin-top: 41px;
+  height: 27px;
+}
+
+#main .cart .cart_goods > li .num input {
+  text-align: center;
+  border: 1px solid #E5E5E5;
+  float: left;
+  height: 25px;
+  width: 32px;
+}
+
+#main .cart .cart_goods > li .num span {
+  border: 1px solid #E5E5E5;
+  float: left;
+  width: 25px;
+  height: 25px;
+}
+
+#main .cart .c_foot {
+  height: 40px;
+}
+
+#main .cart .c_foot > p {
+  float: right;
+  text-align: left;
+  line-height: 40px;
+}
+
+#main .cart .c_foot > p span {
+  color: #E60012;
+}
+
+#main .cart .c_foot .p1 {
+  width: 300px;
+}
+
+#main .cart .c_foot .p1 span {
+  padding-left: 65px;
+  font-weight: bold;
+}
+
+#main .cart .c_foot .p2 {
+  width: 190px;
+}
+
+#main .check {
+  margin-bottom: 20px;
+  height: 105px;
+  border: 1px solid #E5E5E5;
+}
+
+#main .check .c_top {
+  height: 60px;
+  border-bottom: 1px solid #E5E5E5;
+  background-color: #fff;
+}
+
+#main .check .c_top p:nth-child(1) {
+  float: left;
+  margin: 11px 0px 10px 53px;
+}
+
+#main .check .c_top p:nth-child(1) > input {
+  padding-left: 5px;
+  float: left;
+  margin-top: 0;
+  width: 235px;
+  height: 35px;
+  border: 1px solid #E5E5E5;
+}
+
+#main .check .c_top p:nth-child(1) button {
+  float: left;
+  background-color: #FF5C00;
+  color: #fff;
+  height: 37px;
+  width: 80px;
+}
+
+#main .check .c_top p:nth-child(2) {
+  float: right;
+  width: 320px;
+}
+
+#main .check .c_top p:nth-child(2) span {
+  padding-left: 60px;
+  color: #E60012;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+#main .check .c_bot {
+  height: 55px;
+  background-color: #F2F2F2;
+  display: flex;
+}
+
+#main .check .c_bot a {
+  padding-left: 30px;
+  line-height: 55px;
+  color: #057BD2;
+}
+
+#main .check .c_bot p {
+  text-align: right;
+  width: 763px;
+  line-height: 55px;
+}
+
+#main .check .c_bot p span {
+  color: #E60012;
+}
+
+#main .check .c_bot p .total {
+  float: right;
+  font-size: 22px;
+  width: 104px;
+  text-align: center;
+}
+
+#main .check .c_bot button {
+  width: 145px;
+  height: 55px;
+  background-color: #FF5C00;
+  color: #fff;
+  font-size: 22px;
+}
+
+#main .change {
+  height: 175px;
+  border: 1px solid #E5E5E5;
+  margin-bottom: 20px;
+}
+
+#main .change .change_t {
+  height: 32px;
+  background-color: #F5F5F5;
+}
+
+#main .change .change_t ul li {
+  background-color: #fff;
+  line-height: 32px;
+  float: left;
+  padding: 0 35px;
+  border-right: 1px solid #E5E5E5;
+}
+
+#main .change .change_b {
+  height: 144px;
+  background-color: #fff;
+  display: flex;
+}
+
+#main .change .change_b > div {
+  width: 30px;
+}
+
+#main .change .change_b > div i {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 144px;
+  text-align: center;
+}
+
+#main .change .change_b ul {
+  color: #000;
+  display: flex;
+  width: 940px;
+}
+
+#main .change .change_b ul li {
+  width: 33.333%;
+}
+
+#main .change .change_b ul li > p {
+  font-size: 14px;
+  line-height: 47px;
+}
+
+#main .change .change_b ul li .content img {
+  border: 1px solid #E5E5E5;
+  float: left;
+  width: 56px;
+  height: 56px;
+  margin: 0px 3px;
+}
+
+#main .change .change_b ul li .content .c_delt {
+  float: left;
+  margin-left: 10px;
+}
+
+#main .change .change_b ul li .content .c_delt .g_price {
+  color: red;
+  line-height: 28px;
+}
+
+#main .change .change_b ul li .content .c_delt > a {
+  padding: 5px;
+  background-color: #FF9A00;
+  color: #fff;
+  border-radius: 3px;
+}
+
+#main .tuij {
+  margin-bottom: 20px;
+  height: 367px;
+  background-color: #F5F5F5;
+}
+
+#main .tuij .tuij_t {
+  height: 46px;
+}
+
+#main .tuij .tuij_t ul {
+  height: 46px;
+}
+
+#main .tuij .tuij_t ul li {
+  float: left;
+  border-right: 1px solid #E5E5E5;
+  padding: 0px 50px;
+  line-height: 45px;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+#main .tuij .tuij_t li:nth-child(1) {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+
+#main .tuij .tuij_b {
+  height: 320px;
+  background-color: #fff;
+  display: flex;
+}
+
+#main .tuij .tuij_b > ul {
+  padding: 10px 0px;
+  width: 100%;
+}
+
+#main .tuij .tuij_b > ul li {
+  height: 100%;
+  border: 2px solid #fff;
+  margin-left: 40px;
+  float: left;
+  text-align: center;
+}
+
+#main .tuij .tuij_b > ul li img {
+  margin: 10px 20px;
+  display: inline-block;
+  width: 168px;
+  height: 168px;
+  margin: 0xp auto;
+}
+
+#main .tuij .tuij_b > ul li .g_price {
+  font-size: 12px;
+  line-height: 42px;
+  color: #FF5C00;
+}
+
+#main .tuij .tuij_b > ul li .g_price span {
+  font-size: 10px;
+  text-decoration: line-through;
+  color: #E2D5CC;
+}
+
+#main .tuij .tuij_b > ul li > button {
+  margin: auto;
+  display: none;
+  padding: 5px;
+  background-color: #FF5C00;
+  color: #fff;
+  border-radius: 3px;
+}
+
+#main .tuij .tuij_b .hot {
+  display: none;
+}

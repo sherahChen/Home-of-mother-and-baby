@@ -168,10 +168,4 @@
         Car.init(opt);
     }
 
-    $('#banner').children('.box').csmCarousel({
-        imgs:["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg","img/banner4.jpg","img/banner5.jpg"],
-        showBtn:false,
-        width: 1090,
-        height: 350
-    });
 })(jQuery);
