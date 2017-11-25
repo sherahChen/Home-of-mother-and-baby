@@ -10,7 +10,7 @@ textarea { resize:none; } /*·ÀÖ¹ÍÏ¶¯*/
 img {border:0; vertical-align:middle; }  /*  È¥µôÍ¼Æ¬µÍ²âÄ¬ÈÏµÄ3ÏñËØ¿Õ°×·ìÏ¶£¬»òÕßÓÃdisplay£ºblockÒ²¿ÉÒÔ*/
 table { border-collapse:collapse; }
 body {
-    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    /*font:12px/150% Arial,Verdana,"\5b8b\4f53";*/
     color:#666;
     background:#fff;
      }

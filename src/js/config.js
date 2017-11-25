@@ -1,14 +1,14 @@
 require.config({
     paths:{
-        jquery:'../lib/jquery-3.2.1',
-        csmCarousel:'../lib/jquery-csmCarousel/jquery-csmCarousel',
-        csmZoom:'../lib/jquery-csmZoom/jquery-csmZoom',
-        common:'common'
+        jquery:'../web/libs/jquery-3.2.1',
+        common:'common',
+        jqueryUI:'../web/libs/jquery-ui-1.12.1/jquery-ui'
+
     },
     shim:{
        common:['jquery'],
-       csmCarousel:['jquery'],
-       csmZoom:['jquery']
+       jqueryUI:['jquery']
+      
     }
 
 });
